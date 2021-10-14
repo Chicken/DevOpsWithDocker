@@ -1,0 +1,7 @@
+❯ docker run -d --name simp devopsdockeruh/simple-web-service:ubuntu
+6c3883239e3068ca5d96225f122f4588b261b992fbfef8ac037e1f31b1f55217
+
+❯ docker exec -it simp tail ./text.log
+...
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+...
