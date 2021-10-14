@@ -1,0 +1,4 @@
+I am utilizing Docker in a closed sourced group project to:
+ - simplify deployment of a required database
+ - keep dependencies same across the group
+ - make it easier to deploy to production

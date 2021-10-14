@@ -1,0 +1,5 @@
+I kinda accidently did this already so I had to revert and redo what I did on the earlier exercises.
+Anyway these ports are getting confusing to maintain when this machine is already running way too many services (including apache reserving 80/443).
+So please forgive me if I submit wrong ports with the docker-compose files...
+
+But so, remove the REACT_APP_BACKEND_URL env var from frontend and change the REQUEST_ORIGIN in backend to be without a port.
