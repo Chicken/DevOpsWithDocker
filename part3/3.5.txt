@@ -1,0 +1,11 @@
+> Let’s test what the image sizes are when using FROM golang and FROM node in the backend and frontend projects respectively.
+OH NOW YOU WANT ME TO USE THEM AS BASEIMAGES?
+At least this time the size difference is large...
+
+They are still
+- frontend: 987MB
+- backend: 1.06GB
+
+After:
+- frontend: 161MB
+- backend: 447MB

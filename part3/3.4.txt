@@ -1,0 +1,17 @@
+At start:
+- frontend: 1.17GB
+- backend: 1.06GB
+
+How do you get these images to be under 500MB...
+In the backend there is nothing to combine
+and removing stuff makes no difference as they are in the baseimage layers.
+The frontend was able to be combined a little and remove node dependencies and such
+but it's still nowhere near your ideal scores.
+> when using FROM ubuntu:18.04
+Oh I see, you expected me to manually install node and go on ubuntu baseimage
+instead of using the dedicated baseimages...
+Welp that sucks as the first exercise to introduce these said nothing about that...
+
+After optimizations:
+- frontend: 987MB (hey atleast a little...)
+- backend: 1.06GB (no change...)

@@ -1,0 +1,17 @@
+FROM golang:1.16-alpine AS builder
+
+WORKDIR /app
+COPY . .
+
+ENV CGO_ENABLED=0
+RUN go build
+
+FROM scratch
+
+EXPOSE 8080
+ENV PORT=8080
+ENV REQUEST_ORIGIN=http://localhost
+
+COPY --from=builder /app/server /server
+
+ENTRYPOINT [ "/server" ]
